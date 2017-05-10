@@ -6,8 +6,9 @@
 
 import httplib, urllib
 import time
-sleep = 60 # how many seconds to sleep between posts to the channel
-key = 'Put your Thingspeak Channel Key here'  # Thingspeak channel to update
+sleep = 20 # how many seconds to sleep between posts to the channel
+key = 'SBTBMKU4J25NS5HK'  # Thingspeak channel to update
+field1 = '73'
 
 #Report Raspberry Pi internal temperature to Thingspeak Channel
 def thermometer():
@@ -16,7 +17,7 @@ def thermometer():
         temp = int(open('/sys/class/thermal/thermal_zone0/temp').read()) / 1e3 # Get Raspberry Pi CPU temp
         params = urllib.urlencode({'field1': temp, 'key':key }) 
         headers = {"Content-typZZe": "application/x-www-form-urlencoded","Accept": "text/plain"}
-        conn = httplib.HTTPConnection("api.thingspeak.com:80")
+        conn = httplib.HTTPSConnection("api.thingspeak.com")
         try:
             conn.request("POST", "/update", params, headers)
             response = conn.getresponse()

@@ -1,0 +1,19 @@
+ Temperature Measurement - Start at Wed Apr 26 18:34:38 2017
+
+          Using 10 samples at 1 second intervals
+
+ Seconds
+    0.0  temp=49.4'C
+    1.0  temp=49.4'C
+    2.0  temp=49.4'C
+    3.0  temp=49.4'C
+    4.1  temp=49.4'C
+    5.1  temp=49.9'C
+    6.1  temp=49.9'C
+    7.1  temp=49.4'C
+    8.1  temp=49.4'C
+    9.2  temp=49.4'C
+   10.2  temp=49.4'C
+
+ Temperature Measurement - End at   Wed Apr 26 18:34:49 2017
+
